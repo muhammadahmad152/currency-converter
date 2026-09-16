@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <!-- Primary Currency Input -->
+        <div class="currency-container">
+            <select id="currency-first">
+                <option value="USD" selected>🇺🇸 United States - US Dollar (USD)</option>
+                <option value="EUR">🇪🇺 European Union - Euro (EUR)</option>
+                <option value="GBP">🇬🇧 United Kingdom - British Pound (GBP)</option>
+                <option value="JPY">🇯🇵 Japan - Japanese Yen (JPY)</option>
+                <option value="CHF">🇨🇭 Switzerland - Swiss Franc (CHF)</option>
+                <option value="CAD">🇨🇦 Canada - Canadian Dollar (CAD)</option>
+                <option value="AUD">🇦🇺 Australia - Australian Dollar (AUD)</option>
+                <option value="CNY">🇨🇳 China - Chinese Yuan (CNY)</option>
+                <option value="PS">🇵🇸 Palestine - Israeli Shekel (ILS)</option>
+                <option value="JOD">🇯🇴 Jordan / Palestine - Jordanian Dinar (JOD)</option>
+                <option value="SAR">🇸🇦 Saudi Arabia - Saudi Riyal (SAR)</option>
+                <option value="AED">🇦🇪 UAE - UAE Dirham (AED)</option>
+                <option value="PKR">🇵🇰 Pakistan - Pakistani Rupee (PKR)</option>
+                <option value="INR">🇮🇳 India - Indian Rupee (INR)</option>
+            </select>
+            <input type="number" id="worth-first" value="1" min="0" step="any">
+        </div>
+
+        <!-- Target Currency Output -->
+        <div class="currency-container">
+            <select id="currency-second">
+               <option value="ILS">🇵🇸 Palestine - Israeli Shekel (ILS)</option>
+                <option value="USD">🇺🇸 United States - US Dollar (USD)</option>
+                <option value="EUR">🇪🇺 European Union - Euro (EUR)</option>
+                <option value="GBP">🇬🇧 United Kingdom - British Pound (GBP)</option>
+                <option value="JPY">🇯🇵 Japan - Japanese Yen (JPY)</option>
+                <option value="CHF">🇨🇭 Switzerland - Swiss Franc (CHF)</option>
+                <option value="CAD">🇨🇦 Canada - Canadian Dollar (CAD)</option>
+                <option value="AUD">🇦🇺 Australia - Australian Dollar (AUD)</option>
+                <option value="CNY">🇨🇳 China - Chinese Yuan (CNY)</option>
+                <option value="JOD">🇯🇴 Jordan / Palestine - Jordanian Dinar (JOD)</option>
+                <option value="SAR">🇸🇦 Saudi Arabia - Saudi Riyal (SAR)</option>
+                <option value="AED">🇦🇪 UAE - UAE Dirham (AED)</option>
+                <option value="PKR">🇵🇰 Pakistan - Pakistani Rupee (PKR)</option>
+                <option value="INR">🇮🇳 India - Indian Rupee (INR)</option>
+            </select>
+            <input type="number" id="worth-second" disabled placeholder="0.00">
+        </div>
+
+        <!-- Exchange Rate Display -->
+        <p class="exchange-rate" id="exchange-rate">
+            1 USD = -- ILS
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
